@@ -1,59 +1,68 @@
-Disease Prediction System
+# Disease Prediction System
 
-This is a Flask-based web application that predicts diseases based on user-input symptoms. The application utilizes a machine learning model trained with symptom data to provide accurate predictions along with precautions, medications, diet recommendations, and suggested workouts.
+## Overview
+This is a Flask-based web application that predicts diseases based on user-input symptoms. The application utilizes a machine learning model trained with symptom data to provide accurate predictions. It also offers details such as disease descriptions, precautions, medications, diet recommendations, and suggested workouts.
 
-Features
+## Features
+- **Disease Prediction**: Predicts diseases based on input symptoms.
+- **Disease Information**: Provides a description of the predicted disease.
+- **Precautionary Measures**: Lists recommended precautions for the predicted disease.
+- **Medication Suggestions**: Displays potential medications for treatment.
+- **Diet Recommendations**: Suggests appropriate diets based on the disease.
+- **Workout Plans**: Recommends suitable exercises for recovery.
+- **User-Friendly Interface**: Built with Flask and HTML templates.
 
-Predicts diseases based on symptoms entered by the user
+## Installation & Setup
+### Prerequisites
+Ensure you have Python installed on your system. You also need Flask and other dependencies.
 
-Provides a brief description of the predicted disease
+### Steps to Install
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-repository-name.git
+   cd your-repository-name
+   ```
+2. **Install dependencies**:
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. **Run the application**:
+   ```sh
+   python app.py
+   ```
+4. **Access the application**:
+   Open your browser and visit `http://127.0.0.1:5000/`.
 
-Suggests precautions, medications, and dietary recommendations
+## Project Structure
+```
+.
+├── app.py                 # Main Flask application
+├── models/
+│   ├── svc.pkl            # Pre-trained machine learning model
+├── datasets/
+│   ├── symptoms_df.csv     # Symptom data
+│   ├── precautions_df.csv  # Precautions data
+│   ├── workout_df.csv      # Workout recommendations
+│   ├── description.csv     # Disease descriptions
+│   ├── medications.csv     # Medication recommendations
+│   ├── diets.csv           # Diet recommendations
+├── templates/
+│   ├── index.html          # Main web page template
+│   ├── about.html          # About page
+│   ├── contact.html        # Contact page
+│   ├── developer.html      # Developer information
+│   ├── blog.html           # Blog page
+└── requirements.txt        # Required dependencies
+```
 
-Displays recommended workouts for the predicted disease
+## Usage
+1. Enter symptoms separated by commas in the input field.
+2. Click **Submit** to get a predicted disease.
+3. View details, precautions, medications, diets, and workout suggestions.
 
-User-friendly web interface built with Flask and HTML templates
+## Contributing
+Contributions are welcome! Feel free to submit issues or pull requests.
 
-Installation & Setup
-
-Clone the repository:
-
-git clone https://github.com/your-repository-name.git
-cd your-repository-name
-
-Install required dependencies:
-
-pip install -r requirements.txt
-
-Run the application:
-
-python app.py
-
-Open the browser and visit http://127.0.0.1:5000/.
-
-Files & Directories
-
-app.py - Main Flask application
-
-models/svc.pkl - Pre-trained machine learning model for prediction
-
-datasets/ - CSV files containing symptom, precaution, medication, diet, and workout data
-
-templates/ - HTML files for the web interface
-
-Usage
-
-Enter symptoms separated by commas in the input field.
-
-Submit the form to get a predicted disease.
-
-View details, precautions, medications, and recommendations.
-
-Contributing
-
-Feel free to submit issues or pull requests for improvements.
-
-License
-
+## License
 This project is licensed under the MIT License.
 
