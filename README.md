@@ -19,8 +19,8 @@ Ensure you have Python installed on your system. You also need Flask and other d
 ### Steps to Install
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-repository-name.git
-   cd your-repository-name
+   https://github.com/shoyab778/Medical_Recommendation_System
+   cd Medical_Recommendation_System
    ```
 2. **Install dependencies**:
    ```sh
